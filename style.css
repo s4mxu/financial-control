@@ -265,3 +265,62 @@ tbody tr:hover {
         padding: 15px;
     }
 }
+
+/* ESTILOS PARA GRÁFICOS */
+.graficos-section {
+    background: white;
+    border: 2px solid #e3f2fd;
+}
+
+.graficos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.grafico-card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.grafico-card h4 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+canvas {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+.controles-grafico {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btnAtualizarGraficos {
+    width: auto;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+#btnAtualizarGraficos:hover {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+/* Responsividade para gráficos */
+@media (max-width: 768px) {
+    .graficos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grafico-card {
+        padding: 15px;
+    }
+}
